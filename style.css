@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Solitreo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  height: 60px;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  color: aliceblue;
+  align-items: center;
+  padding: 0 20px;
+  font-size: x-large;
+}
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+
+  height: 445px;
+}
+.gameContainer .container {
+  display: grid;
+  font-family: solitreo;
+  font-size: xx-large;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  padding-right: 30px;
+}
+.box {
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: rgb(242, 202, 251);
+}
+.img img {
+  height: 0;
+}
+h1 {
+  font-family: poppins;
+}
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bd-0 {
+  border-bottom: 0;
+}
+
+.gameInfo .info {
+  display: flex;
+  flex-direction: column;
+}
+#reset {
+  width: min-content;
+}
+@media (max-width: 800px) {
+  .gameContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .container {
+    margin-top: 30px;
+  }
+}
